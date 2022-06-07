@@ -3,8 +3,8 @@
     margin: 0;
 }
 header {
-    background-color: slategray;
-    padding: 26px 0 0;
+    position: absolute;
+    width: 100%;
 }
 .container_nav{
     margin:auto;
@@ -13,6 +13,9 @@ header {
     justify-content: space-between;
     max-width: 1188px;
     box-sizing: border-box;
+}
+.container_nav a{
+    margin-top: 26px;
 }
 header nav ul {
     list-style: none;
@@ -60,8 +63,7 @@ button{
 }
 .main_banner{
     background-size:cover;
-    height: 100vh;
-    padding: 88px 0 34px;
+    padding: 170px 0 34px;
     background-image: url(../images/2.jpg);
 }
 .container{
@@ -91,7 +93,6 @@ article{
     display: flex;
     box-sizing: border-box;
 }
-
 .section{
     background-color:white;
     padding-top: 22px;
@@ -99,6 +100,7 @@ article{
 }
 .mw100{
     width: 100%;
+    display: block;
 }
 .vector{
     display: block;
@@ -151,9 +153,17 @@ textarea{
     max-width: 615px;
     margin-left: 104px;
 }
+.section_about{
+    background-color:white;
+    padding-top: 22px;
+    position: relative;
+}
 .img_bath{
-    max-width: 615px;
+    width: 615px;
     margin-left: 120px;
+    position: absolute;
+    right: 0;
+    padding-bottom: 160px;
 }
 .about_us{
     max-width: 385px;
@@ -182,4 +192,62 @@ h3{
 .par_2 span{
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
+}
+.catalog{
+    padding-top: 29px;
+    padding-bottom: 150px;
+    box-sizing: border-box;
+}
+.see_more{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.catalog .example button{
+    display: block;
+    margin: auto;
+}
+.catalog .example button{
+    display: block;
+    margin-top: 30px;
+}
+.catalog h4{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #373737;
+    margin-top: 150px;
+    margin-bottom: 52px;
+    margin-left: 95px;
+}
+.catalog .texture p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #373737;
+    margin-bottom: 40px;
+}
+.texture{
+    display: flex;
+    justify-content: space-between;
+}
+.example{
+    max-width: 1112px;
+    margin: auto;
+}
+.img_catalog{
+    max-width: 255px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 30px;
+}
+.img_catalog:last-of-type{
+    margin-right: 0;
+}
+.img_catalog .mw100{
+    margin-bottom: 20px;
 }
