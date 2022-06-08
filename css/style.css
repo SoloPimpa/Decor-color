@@ -296,20 +296,16 @@ h3 {
 .img_catalog .mw100 {
     margin-bottom: 20px;
 }
-
 .video_reviews {
     padding-top: 60px;
     padding-bottom: 95px;
     box-sizing: border-box;
     background-image: url("../images/Group.jpg");
-    position: relative;
 }
-
 .container_video {
     max-width: 1110px;
     margin: auto;
 }
-
 .video_reviews .container_video h4 {
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
@@ -323,16 +319,17 @@ h3 {
 .video_reviews .container_video .video {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .video_reviews .container_video .video .play_video{
     max-width: 255px;
     overflow: hidden;
     margin-right: 30px;
 }
-.video_reviews .container_video .video .play_video:last-of-type{
+.video_reviews .container_video .video .play_video:nth-last-of-type(2){
     margin-right: 0;
 }
-.video_reviews img{
+.video_reviews .play_video img{
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -353,3 +350,33 @@ h3 {
     line-height: 150%;
     color: #FFFFFF;
 }
+.video_reviews .play{
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.video_reviews .container_img:first-of-type{
+    position: absolute;
+    left: 5%;
+    top:15%;
+}
+.video_reviews .container_img:nth-child(2){
+    position: absolute;
+    left: 30%;
+    top:15%;
+}
+.video_reviews .container_img:nth-child(3){
+    position: absolute;
+    left: 56%;
+    top:15%;
+}
+.video_reviews .container_img:last-of-type{
+    position: absolute;
+    left: 82%;
+    top:15%;
+}
+
+
+
+
