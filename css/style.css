@@ -237,8 +237,17 @@ h3 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0 0 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 20px 50px;
 }
-
+.button_more{
+    text-align: center;
+    margin-top: 70px;
+}
 .catalog .example button {
     display: block;
     margin: auto;
@@ -286,9 +295,7 @@ h3 {
     border-radius: 20px;
     overflow: hidden;
     display: inline-block;
-    margin-right: 30px;
 }
-
 .img_catalog:last-of-type {
     margin-right: 0;
 }
@@ -324,7 +331,6 @@ h3 {
 .video_reviews .container_video .video .play_video{
     max-width: 255px;
     overflow: hidden;
-    margin-right: 30px;
 }
 .video_reviews .container_video .video .play_video:nth-last-of-type(2){
     margin-right: 0;
