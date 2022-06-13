@@ -225,25 +225,23 @@ h3 {
 .button_more{
     text-align: center;
     margin-top: 70px;
-}
-.catalog .example button {
     display: block;
-    margin: auto;
 }
-.catalog .example button {
-    display: block;
-    margin-top: 30px;
+.catalog .mw100{
+    margin-bottom: 150px;
 }
-.catalog h4 {
+.catalog .example .tit{
+    max-width: 920px;
+    margin:auto;
+}
+.catalog .example .tit h4 {
     font-family: 'Gothic A1', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 130%;
     color: #373737;
-    margin-top: 150px;
     margin-bottom: 52px;
-    margin-left: 95px;
 }
 .catalog .texture p {
     font-family: 'Roboto', sans-serif;
@@ -252,7 +250,6 @@ h3 {
     font-size: 16px;
     line-height: 150%;
     color: #373737;
-    margin-bottom: 40px;
 }
 .texture {
     display: flex;
@@ -263,11 +260,15 @@ h3 {
     max-width: 1112px;
     margin: auto;
 }
-.img_catalog {
+.img_catalog{
+    max-width: 255px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.img_catalog .img_texture{
     max-width: 255px;
     border-radius: 20px;
     overflow: hidden;
-    display: inline-block;
 }
 .img_catalog:hover {
     transform: scale(1.1);
@@ -280,7 +281,7 @@ h3 {
 }
 .video_reviews {
     padding-top: 60px;
-    padding-bottom: 95px;
+    padding-bottom: 47px;
     box-sizing: border-box;
     background-image: url("../images/Group.jpg");
 }
@@ -289,7 +290,9 @@ h3 {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
+}
+.container_video{
+    margin-bottom: 47px;
 }
 .video_reviews .vr{
     max-width: 1110px;
@@ -309,30 +312,19 @@ h3 {
 }
 .video_reviews .container_video .play_video{
     max-width: 255px;
+    position: relative;
 }
-.video_reviews .play_video img{
+.video_reviews .play_video .img_play{
     border-radius: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    max-width: 255px;
 }
-.video_reviews .play_video:first-of-type .play{
+
+.video_reviews .play_video .play{
     position: absolute;
     top:15%;
-    left: 5%;
-}
-.video_reviews .play_video:nth-child(2) .play{
-    position: absolute;
-    top:15%;
-    left: 30%;
-}
-.video_reviews .play_video:nth-child(3) .play{
-    position: absolute;
-    top:15%;
-    left: 56%;
-}
-.video_reviews .play_video:last-of-type .play{
-    position: absolute;
-    top:15%;
-    left: 82%;
+    left: 20%;
 }
 .video_reviews h5{
     font-family: 'Roboto', sans-serif;
@@ -351,6 +343,120 @@ h3 {
     line-height: 150%;
     color: #FFFFFF;
 }
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../images/Group.jpg");
+}
+footer .contacts_map{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1107px;
+    margin: auto;
+}
+footer h5{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+footer .contacts{
+    position: relative;
+}
+footer .contacts p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    padding-bottom: 35px;
+}
+footer .general_contacts{
+    position: relative;
+    margin-top: 8px;
+}
+footer .general_contacts p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+footer .general_contacts p:first-of-type{
+    margin-left: 28px;
+}
+footer .general_contacts p:last-of-type{
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+footer .map{
+    max-width: 540px;
+    height: 146px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+.map .click {
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: -15px 15px 66px rgba(0, 57, 109, 0.46);
+    text-align: center;
+    padding-top: 45px;
+}
+footer .contacts_map .contacts a{
+    margin-right: 24px;
+}
+footer .contacts_map .contacts a:first-of-type:before{
+    content: "";
+    background-image: url("../images/fb.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+footer .contacts_map .contacts a:nth-of-type(2):before{
+    content: "";
+    background-image: url("../images/facebook-square.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+footer .contacts_map .contacts a:nth-of-type(3):before{
+    content: "";
+    background-image: url("../images/instagram.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+footer .contacts_map .contacts a:last-of-type{
+    margin-right: 0;
+}
+footer .contacts_map .contacts a:last-of-type:before{
+    content: "";
+    background-image: url("../images/viber-square.svg");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: relative;
+}
+
+
 
 
 
