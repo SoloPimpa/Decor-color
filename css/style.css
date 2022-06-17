@@ -254,6 +254,7 @@ h3 {
 .texture {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     transition: 0.3s;
 }
 .example {
@@ -290,9 +291,7 @@ h3 {
     margin: auto;
     display: flex;
     justify-content: space-between;
-}
-.container_video{
-    margin-bottom: 47px;
+    flex-wrap: wrap;
 }
 .video_reviews .vr{
     max-width: 1110px;
@@ -313,6 +312,7 @@ h3 {
 .video_reviews .container_video .play_video{
     max-width: 255px;
     position: relative;
+    margin-bottom: 47px;
 }
 .video_reviews .play_video .img_play{
     border-radius: 20px;
@@ -457,7 +457,7 @@ footer .contacts_map .contacts a:last-of-type:before{
 }
 .why_we{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     background-image: url("../images/Group.jpg");
 }
 .why_we .question{
@@ -480,6 +480,7 @@ footer .contacts_map .contacts a:last-of-type:before{
     max-width: 1110px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
 }
 .why_we .container_articles .article{
@@ -488,6 +489,7 @@ footer .contacts_map .contacts a:last-of-type:before{
     border-radius: 20px;
     padding: 50px 30px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 .why_we .container_articles .article h6{
     font-family: 'Roboto', sans-serif;
@@ -546,6 +548,7 @@ footer .contacts_map .contacts a:last-of-type:before{
     max-width: 1110px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
 }
 .portfolio .container_portfolio .travertino{
@@ -578,6 +581,127 @@ footer .contacts_map .contacts a:last-of-type:before{
     font-size: 16px;
     line-height: 150%;
     color: #373737;
+}
+.price{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../images/Group.jpg");
+}
+.price .container_calculations{
+    max-width: 1190px;
+    margin: auto;
+    position: relative;
+}
+.price .container{
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+.price .container:first-of-type{
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+.price .container .container_question{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+.price .container_calculations .container p{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+.price .container_calculations .container h6{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+.background_price{
+    max-width: 1128px;
+    border-radius: 30px;
+    background-color: #4C6071;
+    padding: 30px 50px 70px 30px;
+    margin: 0 30px 0 30px;
+    display: flex;
+}
+.price .background_price .container_checkbox{
+    max-width: 408px;
+}
+.price .dec_plaster,.painting,.both{
+background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+}
+.price .container_checkbox span{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    margin-right: 65px;
+}
+.price .dec_plaster,.painting,.both{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.dec_plaster input{
+    width: inherit;
+}
+.painting input{
+    width: inherit;
+}
+.both input{
+    width: inherit;
+}
+.painting span p{
+    margin-right: 186px;
+}
+.img_book{
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.back_next{
+    display: flex;
+    justify-content: space-between;
+}
+.back_next .back{
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: #8F8F8F;
+    box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 116px;
+    margin-left: 30px;
+}
+.back_next .next{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 116px;
 }
 
 
