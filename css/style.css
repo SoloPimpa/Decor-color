@@ -703,6 +703,29 @@ background-color: #FFFFFF;
     border-radius: 10px;
     padding: 20px 116px;
 }
+.owl-nav .owl-prev:before{
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-weight: 900;
+    content: "\f053";
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-right: 42px;
+}
+.owl-nav .owl-next:before{
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-weight: 900;
+    content: "\f054";
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.owl-nav{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 103px;
+    top: -118px;
+}
 
 
 
