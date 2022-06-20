@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +16,7 @@
     rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 </head>
 <body>
 <header>
@@ -208,38 +211,72 @@
         <div class="button_more"><a class="see_more" href="#" target="_blank">Показать больше</a></div>
     </div>
 </section>
-<section class="price">
-    <div class="container_calculations">
-        <div class="container"><p>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5
-            вопросов</p>
+<section class="quest_banner">
+    <div class="quest_header">
+        <h2>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</h2>
+    </div>
+    <div class="quest_main" id="accordion">
+        <h3>
+        <span>Какая услуга Вас интересует?</span>
+        <span>Вопрос 1 из 5</span>
+        </h3>
+        <div>
+            <form method="post" action="#" name="quest">
+                <div class="quest_form">
+                    <div class="select_method">
+                        <label for="method1">
+                            <input type="radio" name="method" id="method1">
+                            Декоративная штукатурка</label>
+                        <label for="method2">
+                            <input type="radio" name="method" id="method2">
+                            Покраска</label>
+                        <label for="method3">
+                            <input type="radio" name="method" id="method3" class="last_method">
+                            Декоративная штукатурка<br>
+                            + покраска</label>
+                    </div>
+                    <div class="quest_form_right">
+                        <div class="quest_img">
+                            <img src="images/book.jpg" alt="quest1">
+                        </div>
+                        <div class="quest_buttons">
+                            <button type="submit" class="button_back">Назад</button>
+                            <button type="submit" class="button_forward">Далее</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="container">
-            <div class="container_question"><h6>Какая услуга Вас интересует?</h6>
-                <p>Вопрос 1 из 5</p>
-            </div>
-
-            <div class="background_price">
-                <div class="container_checkbox">
-                    <div class="dec_plaster"><span><p>Декоративная штукатурка</p></span>
-                        <form name="question" method="get"><input type="checkbox" name="lan1" value="plaster"></form>
+        <h3>
+            <span>Какая услуга Вас интересует?</span>
+            <span>Вопрос 1 из 5</span>
+        </h3>
+        <div>
+            <form method="post" action="#" name="quest">
+                <div class="quest_form">
+                    <div class="select_method">
+                        <label for="method4">
+                            <input type="radio" name="method" id="method4">
+                            Декоративная штукатурка</label>
+                        <label for="method5">
+                            <input type="radio" name="method" id="method5">
+                            Покраска</label>
+                        <label for="method6">
+                            <input type="radio" name="method" id="method6" class="last_method">
+                            Декоративная штукатурка<br>
+                            + покраска</label>
                     </div>
-                    <div class="painting"><span><p>Покраска</p></span>
-                        <form name="question" method="get"><input type="checkbox" name="lan2" value="painting"></form>
-                    </div>
-                    <div class="both"><span><p>Декоративная штукатурка
-                        + покраска</p></span>
-                        <form name="question" method="get"><input type="checkbox" name="lan3" value="both"></form>
+                    <div class="quest_form_right">
+                        <div class="quest_img">
+                            <img src="images/book.jpg" alt="quest1">
+                        </div>
+                        <div class="quest_buttons">
+                            <button type="submit" class="button_back">Назад</button>
+                            <button type="submit" class="button_forward">Далее</button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="img_book"><img class="mw100" src="images/book.jpg" alt="img">
-                    </div>
-                    <div class="back_next">
-                        <div class="back"><a href="#" target="_blank">Назад</a></div>
-                        <div class="next"><a href="#" target="_blank">Далее</a></div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </section>
@@ -281,7 +318,6 @@
             <p>example@gmail.com</p>
             <p>+7 495 178 57 17</p>
         </div>
-
         <div class="map">
             <div class="click"><a href="#" target="_blank">Нажмите чтобы<br>посмотреть на карте</a></div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.1889677666745!2d30.71950052752103!3d46.385476999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c634acc0b846e7%3A0x9edb998fad13abcc!2z0KLQkNCS0KDQmNCvINCS!5e0!3m2!1sru!2sua!4v1655067549719!5m2!1sru!2sua"
@@ -297,5 +333,6 @@
         crossorigin="anonymous"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/scripts.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 </body>
 </html>

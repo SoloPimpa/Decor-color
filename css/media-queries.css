@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1024px) {
+    .main_banner,.section,.why_we,.section_about,.video_reviews,.catalog,.price,.portfolio{
+        background-size: inherit;
+        background-position: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+   h1{
+       font-size: 45px;
+   }
+   .main_banner{
+       padding-top: 170px;
+   }
+   .play_video{
+       margin-right: 15px;
+   }
+   footer{
+       padding-right: 15px;
+       padding-left: 15px;
+   }
+}
+@media only screen and (max-width: 992px) {
+.section_about{
+    position: center;
+}
+    .container{
+    display: block;
+}
+    .img_bath{
+        position: inherit;
+    }
+    .par_2{
+        padding-bottom: 25px;
+    }
+    header nav ul li a{
+        font-size: 14px;
+    }
+    header ul,a{
+        display: block;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    header nav ul li{
+        display: none;
+    }
+    header ul,a{
+        display: none;
+    }
+}
+@media only screen and (max-width: 420px) {
+    header{
+        display: none;
+    }
+}
+@media only screen and (max-width: 375px) {
+
+}
+@media only screen and (max-width: 360px) {
+
+}
+@media only screen and (max-width: 320px) {
+
+}
